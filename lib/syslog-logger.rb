@@ -157,5 +157,8 @@ class Logger::Syslog
       message.gsub!(/\e\[[^m]*m/, '') # remove useless ansi color codes
       return message
     end
-
+    
+    def silence_logger(nada)
+      nil
+    end
 end
